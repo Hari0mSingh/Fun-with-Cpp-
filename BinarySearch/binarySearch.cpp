@@ -24,8 +24,8 @@ int binarySearch(int arr[], int size, int key) {
 }
 
 int main() {
-    int even[6] = {1, 3, 4, 6, 8, 9};
-    int odd[5] = {3, 4, 6, 9, 8};
+    int even[6] = {2, 4, 6, 8, 10,12};
+    int odd[5] = {1, 3, 5, 7, 10};
     int key;
     cout << "enter key element : ";
     cin >> key;
