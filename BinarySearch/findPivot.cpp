@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-//you have given a rotated array find the Pivot element of the Array
+//you have given a orted rotated array find the Pivot element of the Array
 
 int findPivot(int arr[],int n){
     int s = 0;
