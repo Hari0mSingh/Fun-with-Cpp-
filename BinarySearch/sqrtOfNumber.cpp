@@ -25,13 +25,24 @@ long long int sqrt(long long int num){
     }
     return ans;
 }
-
+double sqrtwithPercision(int num,int percision,int tempSol){
+    double factor = 1;
+    double ans = tempSol;
+    for(int i=0;i<percision;i++){
+        factor = factor/10;
+          while ((ans + factor) * (ans + factor) <= num) {
+            ans = ans + factor;
+        }
+    }
+    return ans;
+}
 int main(){
     long long int num; 
     cout << "Enter the number for finding the Square root: " << endl;
     cin >> num;
 
-    long long int ans = sqrt(num);
-    cout << "The square root of " << num << " is " << ans << endl;
+    long long int tempSol = sqrt(num);
+
+    cout << "The square root of " << num << " is " << sqrtwithPercision(num,3,tempSol) << endl;
     return 0;
 }
